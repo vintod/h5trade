@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>持仓</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../lib/css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/qry_position.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="../lib/js/flipsnap.js"></script>
+	<script type="text/javascript" src="../lib/js/common.js"></script>
+</head>
+<body>
+	<div class="header bg1">
+		<a class="back bg1a">&nbsp;</a>
+		持仓
+		<a class="search">&nbsp;</a>
+	</div>
+	<div class="tab">
+		<span class="line"></span>
+		<ul>
+			<li data-url="entrust_buy">买入</li>
+			<li data-url="entrust_sell">卖出</li>
+			<li data-url="cancel_order">撤单</li>
+			<li data-url="qry_position" class="active">持仓</li>
+			<li data-url="qry_assets">资产</li>
+			<li data-url="qry_more">查询</li>
+		</ul>
+	</div>
+	
+	<div class="content">
+	
+		<div class="outer">
+			<div class="inner">
+				<div class="page" id="assets0">
+					<p class="title cn">人民币账户(元)</p>
+					<div class="left">
+						<p class="value income">-.--</p>
+						<p class="key">持仓盈亏</p>
+					</div>
+					<div class="right">
+						<ul>
+							<li>
+								<p class="key">总资产</p>
+								<p class="value marketvalue">-.--</p>
+							</li>
+							<li>
+								<p class="key">股票市值</p>
+								<p class="value stkvalue">-.--</p>
+							</li>
+							<li>
+								<p class="key">余额</p>
+								<p class="value fundbal">-.--</p>
+							</li>
+							<li>
+								<p class="key">可用</p>
+								<p class="value fundavl">-.--</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="page" id="assets1">
+					<p class="title hk">港币账户(港币)</p>
+					<div class="left">
+						<p class="value income">-.--</p>
+						<p class="key">持仓盈亏</p>
+					</div>
+					<div class="right">
+						<ul>
+							<li>
+								<p class="key">总资产</p>
+								<p class="value marketvalue">-.--</p>
+							</li>
+							<li>
+								<p class="key">股票市值</p>
+								<p class="value stkvalue">-.--</p>
+							</li>
+							<li>
+								<p class="key">余额</p>
+								<p class="value fundbal">-.--</p>
+							</li>
+							<li>
+								<p class="key">可用</p>
+								<p class="value fundavl">-.--</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="page" id="assets2">
+					<p class="title us">美元账户(美元)</p>
+					<div class="left">
+						<p class="value income">-.--</p>
+						<p class="key">持仓盈亏</p>
+					</div>
+					<div class="right">
+						<ul>
+							<li>
+								<p class="key">总资产</p>
+								<p class="value marketvalue">-.--</p>
+							</li>
+							<li>
+								<p class="key">股票市值</p>
+								<p class="value stkvalue">-.--</p>
+							</li>
+							<li>
+								<p class="key">余额</p>
+								<p class="value fundbal">-.--</p>
+							</li>
+							<li>
+								<p class="key">可用</p>
+								<p class="value fundavl">-.--</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div><!-- inner -->
+		</div><!-- outer -->
+		
+		<div class="title">
+			<ul>
+				<li>市值/市价</li>
+				<li>盈亏/盈亏率</li>
+				<li>买入价/成本价</li>
+				<li>持仓/可用</li>
+			</ul>
+		</div>
+		<div class="list" id="list">
+			<p class="nodata">没有查询到数据</p>
+		</div><!-- list -->
+		
+	</div><!-- content -->
+</body>
+</html>

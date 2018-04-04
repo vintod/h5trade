@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>历史资金流水</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../lib/css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/his_fundflow.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="../lib/js/common.js"></script>
+</head>
+<body>
+	<div class="header bg1">
+		<a class="back bg1a">&nbsp;</a>
+		历史资金流水
+	</div>
+	<div class="content">
+		<ul class="cond">
+			<li>
+				<p class="value" id="startDate">yyyy-mm-dd</p>
+				<input type="date" id="selStartDate">
+			</li>
+			<li>-</li>
+			<li>
+				<p class="value" id="endDate">yyyy-mm-dd</p>
+				<input type="date" id="selEndDate">
+			</li>
+			<li>
+				<p class="c-button min bg1 bg1a" id="btn">筛选</p>
+			</li>
+		</ul>
+		<ul class="title">
+			<li>日期/类别</li>
+			<li>名称/代码</li>
+			<li>价格/数量</li>
+			<li>发生/剩余</li>
+		</ul>
+		<div class="list" id="list"></div>
+	</div>
+</body>
+</html>

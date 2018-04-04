@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改密码</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../lib/css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/modify_pwd.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="../lib/js/common.js"></script>
+</head>
+<body>
+	<div class="header bg1">
+		<a class="back bg1a">&nbsp;</a>
+		修改密码
+	</div>
+	
+	<div class="content">
+		<div class="form">
+			<ul>
+				<li>类型</li>
+				<li class="field">
+					<span class="value">交易密码</span>
+					<select id="selPwdType">
+						<option value="302">交易密码</option>
+						<option value="303">资金密码</option>
+					</select>
+					<span class="arrow">&nbsp;</span>
+				</li>
+			</ul>
+			<ul>
+				<li>原密码</li>
+				<li class="field">
+					<input id="inputOldPwd" type="tel" placeholder="请输入原密码" maxlength="6">
+					<a class="watch" id="btnOldPwd">&nbsp;</a>
+				</li>
+			</ul>
+			
+			<ul>
+				<li>新密码</li>
+				<li class="field">
+					<input id="inputNewPwd" type="tel" placeholder="复杂的6位数字" maxlength="6">
+					<a class="watch" id="btnNewPwd">&nbsp;</a>
+				</li>
+			</ul>
+		</div>
+		<p>&nbsp;</p>
+		<p class="c-button bg1 bg1a" id="btnSubmit">提交</p>
+		
+	</div>
+</body>
+</html>

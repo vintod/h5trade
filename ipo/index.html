@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>一键打新</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../lib/css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/index.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="../lib/js/common.js"></script>
+</head>
+<body>
+	<div class="header bg1">
+		<a class="back">&nbsp;</a>
+		一键打新
+		<a class="more">&nbsp;</a>
+	</div>
+	<div class="content">
+		<div class="head bg1">
+			<p class="title">
+				<span class="t">☞&nbsp;可申购额度</span>
+				<span class="time bg2">申购时间&nbsp;9:30-15:00</span>
+			</p>
+			
+			<ul class="market">
+				<li>
+					<p>
+						<span class="value" id="szMarketLimit">0</span>
+						<span class="u">股</span>
+					</p>
+					<p class="m">深圳市场</p>
+				</li>
+				<li>
+					<p>
+						<span class="value" id="shMarketLimit">0</span>
+						<span class="u">股</span>
+					</p>
+					<p class="m">上海市场</p>
+				</li>
+			</ul>
+			
+			<p class="course">
+				<a id="btnStudy">跟我学打新&nbsp;</a>
+			</p>
+		</div><!-- header -->
+		
+		<div class="tab">
+			<span class="line"></span>
+			<ul>
+				<li>即将申购</li>
+				<li class="active">申购中</li>
+				<li>即将上市</li>
+			</ul>
+		</div>
+		
+		<div class="container">
+			<div class="page hide"  id="tab_page0"><!-- 即将申购 -->
+				<div id="jjsgList">
+					<div class="panel">
+						<a class="title expand">即将申购</a>
+						<div class="list">
+							<p class="nodata2">近期无即将申购新股</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="page" id="tab_page1"><!-- 申购中 -->
+				<div class="panel">
+					<a class="title expand">今日申购</a>
+					<div class="list" id="sgList">
+						<p class="nodata2">今日无申购新股</p>
+					</div>
+				</div>
+			</div>
+			<div class="page hide"  id="tab_page2"><!-- 即将上市 -->
+				<div class="panel">
+					<a class="title expand">即将上市</a>
+					<div class="list" id="jjssList">
+						<p class="nodata2">近期无即将上市新股</p>
+					</div>
+				</div>
+			</div>
+			
+			<p class="fill">&nbsp;</p>
+			
+		</div><!-- container -->
+		
+		<!-- 立即申购按钮 -->
+		<p class="btn1 bg1 bg1a disabled" id="btnPurchase">立即申购</p>
+		
+		<!-- 查询按钮 -->
+		<p class="btn2" id="btnQuery">查询</p>
+		
+		<!-- 右下角菜单 -->
+		<div class="cpop" id="tbarPanel">
+			<div class="tbar">
+				<div class="menu bg1" id="qryMenus">
+					<a data-url="./qryPurchase.html">我的申购</a>
+					<a data-url="./qryNumber.html">我的配号</a>
+					<a data-url="./qryAllocation.html">我的中签</a>
+				</div>
+				<div class="arrow">&nbsp;</div>
+			</div>
+		</div>
+		
+	</div><!-- content -->
+</body>
+</html>

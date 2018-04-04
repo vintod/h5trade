@@ -1,0 +1,39 @@
+@charset "utf-8";
+.tab .line {
+	left: calc(16.66% * 5 + (16.66% - 28px)/2);
+}
+.content {
+	margin-top: 5px;
+	font-size: 1.4rem;
+}
+.title {
+	color: #6d6d6d;
+	overflow: auto;
+	height: 35px;
+	line-height: 35px;
+}
+.title li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.list {
+	color: #666;
+	overflow: auto;
+}
+.list ul {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	overflow: auto;
+}
+.list li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding: 10px 0;
+}
+.list li p {
+	height: 20px;
+	line-height: 20px;
+	white-space:nowrap;
+}

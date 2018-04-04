@@ -1,0 +1,75 @@
+.content {
+	font-size: 1.6rem;
+}
+
+.full-img-wrap {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.full-img-wrap img {
+	width: 100%;
+	display: block;
+}
+#FAQ {
+	border: 0;
+}
+#FAQ figcaption {
+	text-align: center;
+	height: 4.0rem;
+	line-height: 4.0rem;
+	font-weight: 600;
+	border-bottom: 1px solid #ddd;
+}
+
+#FAQ dl {
+	padding-bottom: 5.0rem;
+	font-size: 1.3rem;
+}
+
+#FAQ dt {
+	position: relative;
+	background: #f2f2f2;
+	/*height: 4.0rem;*/
+	/*line-height: 3.0rem;*/
+	padding: 1rem 3rem 1rem 1rem;
+	border-bottom: 1px dashed #dddddd;
+	font-size: 1.6rem;
+}
+
+#FAQ dt:after {
+	content: "";
+	position: absolute;
+	right: 1.2rem;
+	top: 50%;
+	margin-top: -0.3rem;
+	width: 2rem;
+	height: 0.7rem;
+	background: url(../images/arr.gif) no-repeat center center;
+	background-size: 1.2rem auto;
+}
+
+#FAQ dt.current {
+	background: #fff;
+	font-weight: 600;
+}
+
+#FAQ dt.current:after {
+	background: url(../images/arr2.gif) no-repeat center center;
+	background-size: 1.2rem auto;
+}
+
+#FAQ dd {
+	background: #fff;
+	padding: 1rem 1.5rem;
+	display: none;
+	line-height: 2.0rem;
+	font-size: 1.6rem;
+	text-align: justify;
+	text-indent: 2em;
+}
+
+#FAQ dd p {
+	display: block;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>委托买入</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../lib/css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/entrust_buy.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="../lib/js/common.js"></script>
+</head>
+<body>
+	<div class="header bg1">
+		<a class="back bg1a">&nbsp;</a>
+		委托买入
+	</div>
+	<div class="tab">
+		<span class="line"></span>
+		<ul>
+			<li data-url="entrust_buy" class="active">买入</li>
+			<li data-url="entrust_sell">卖出</li>
+			<li data-url="cancel_order">撤单</li>
+			<li data-url="qry_position">持仓</li>
+			<li data-url="qry_assets">资产</li>
+			<li data-url="qry_more">查询</li>
+		</ul>
+	</div>
+	<div class="wt">
+		<div class="wudang" id="wudang">
+			<div class="sell">
+				<a><span>卖五</span><span>-.--</span><span>--</span></a>
+				<a><span>卖四</span><span>-.--</span><span>--</span></a>
+				<a><span>卖三</span><span>-.--</span><span>--</span></a>
+				<a><span>卖二</span><span>-.--</span><span>--</span></a>
+				<a><span>卖一</span><span>-.--</span><span>--</span></a>
+			</div>
+			<div class="wc-box"><span class="split-buy"></span><span class="split-sell"></span></div>
+			<div class="buy">
+				<a><span>买一</span><span>-.--</span><span>--</span></a>
+				<a><span>买二</span><span>-.--</span><span>--</span></a>
+				<a><span>买三</span><span>-.--</span><span>--</span></a>
+				<a><span>买四</span><span>-.--</span><span>--</span></a>
+				<a><span>买五</span><span>-.--</span><span>--</span></a>
+			</div>
+		</div>
+		
+		<div class="form">
+			<p class="field">
+				<input class="stkcode" id="stkcode" placeholder="证券代码" type="tel" maxlength="6">
+				<a class="clear" id="clear">&nbsp;</a>
+			</p>
+			<p class="field">
+				<span id="secuid">股东账号</span>
+			</p>
+			<p class="field">
+				<span id="bsflag">委托方式</span>
+				<select id="selWTFS"></select>
+				<span class="arrow">&nbsp;</span>
+			</p>
+			<p class="summ">
+		   		<span>跌停：<span class="green bold" id="downprice">-.--</span></span>
+		   		<span>涨停：<span class="red bold" id="upprice">-.--</span></span>
+			</p>
+			<p class="trade">
+				<a class="opt" data-field="#price" data-type="-" data-step="0.01" data-bit="2">-<span class="step">0.01</span></a><!-- 
+			 --><span class="field pn">
+			 		<input placeholder="委托价格" type="number" id="price">
+			 	</span><!-- 
+			 --><a class="opt" data-field="#price" data-type="+" data-step="0.01" data-bit="2">+<span class="step">0.01</span></a>
+			</p>
+			<p class="trade">
+				<a class="opt" data-field="#qty" data-type="-" data-step="100" data-bit="0">-<span class="step">100</span></a><!--
+			 --><span class="field pn">
+			 		<input placeholder="委托数量" type="tel" id="qty">
+			 	</span><!--
+			 --><a class="opt" data-field="#qty" data-type="+" data-step="100" data-bit="0">+<span class="step">100</span></a>
+			</p>
+			<p class="scale" id="selRate">
+				<a class="pos" data-rate="1.00">全仓</a>
+			 	<a class="pos" data-rate="0.50">1/2</a>
+			 	<a class="pos" data-rate="0.33">1/3</a>
+			 	<a class="pos" data-rate="0.25">1/4</a>
+			</p>
+			<p class="summ">
+		   		<span>金额：<span class="gray bold" id="amount">-.--</span></span>
+		   		<span>余额：<span class="gray bold" id="balance">-.--</span></span>
+			</p>
+		</div>
+	</div>
+	<p>&nbsp;</p>
+	<p class="c-button bg1 bg1a" id="btnSubmit">买入</p>
+	
+	<ul class="list_title" id="stkListTitle">
+		<li>市值/市价</li>
+		<li>盈亏/盈亏率</li>
+		<li>买入价/成本价</li>
+		<li>持仓/可用</li>
+	</ul>
+	<div class="list_cont" id="stkList"></div>
+</body>
+</html>

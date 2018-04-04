@@ -1,0 +1,46 @@
+@charset "utf-8";
+.tab li.active {
+	background-size: 56px 2px;
+}
+.tab .line {
+	width: 55px;
+	left: calc((25% - 55px)/2);
+}
+.content {
+	font-size: 1.4rem;
+}
+.card {
+	display: block;
+	margin-top: 5px;
+	padding: 10px 40px 10px 150px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	background-color: #fff;
+	text-align: right;
+}
+.card.zsyh {
+	background: #fff url(../images/logo_zsyh.png) no-repeat left center;
+	background-size: 30px 30px;
+	background-position: 20px 50%;
+}
+.card:active {
+	background-color: #eee !important;
+}
+.card .bank {
+	font-size: 1.4rem;
+}
+.card .no {
+	font-size: 1.2rem;
+	color: #828282;
+}
+.card.active:after {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 100%;
+	top: 0;
+	right: 15px;
+	background: transparent url(../images/icon_right.png) no-repeat left center;
+	background-size: 20px auto;
+}

@@ -1,0 +1,93 @@
+@charset "utf-8";
+a {
+	text-decoration: none;
+}
+.content {
+	font-size: 1.6rem;
+	overflow: auto;
+}
+.title {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	color: #97afc2;
+	font-size: 1.4rem;
+}
+.menu {
+	overflow: auto;
+	background-color: #fff;
+	padding: 1px 0;
+	font-size: 1.4rem;
+	color: #666;
+	text-align: center;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.menu li {
+	float: left;
+	width: 25%;
+	height: 30px;
+	padding-top: 50px;
+	background-size: 25px 25px;
+	background-position: 50% 15px;
+}
+.menu li:active {
+	background-color: #eee;
+}
+.menu li.two {
+	height: 40px;
+}
+.buy {
+	background: transparent url(../images/icon_buy.png) no-repeat;
+}
+.sell {
+	background: transparent url(../images/icon_sell.png) no-repeat;
+}
+.cancel {
+	background: transparent url(../images/icon_cancel.png) no-repeat;
+}
+.position {
+	background: transparent url(../images/icon_position.png) no-repeat;
+}
+.dayOrder {
+	background: transparent url(../images/icon_day_order.png) no-repeat;
+}
+.hisOrder {
+	background: transparent url(../images/icon_his_order.png) no-repeat;
+}
+.dayDeal {
+	background: transparent url(../images/icon_day_deal.png) no-repeat;
+}
+.hisDeal {
+	background: transparent url(../images/icon_his_deal.png) no-repeat;
+}
+.capital {
+	background: transparent url(../images/icon_capital.png) no-repeat;
+}
+.transfer {
+	background: transparent url(../images/icon_transfer.png) no-repeat;
+}
+.dayFlow {
+	background: transparent url(../images/icon_day_flow.png) no-repeat;
+}
+.hisFlow {
+	background: transparent url(../images/icon_his_flow.png) no-repeat;
+}
+.delivery {
+	background: transparent url(../images/icon_delivery.png) no-repeat;
+}
+.acct {
+	background: transparent url(../images/icon_acct.png) no-repeat;
+}
+.ipo {
+	background: transparent url(../images/icon_ipo.png) no-repeat;
+}
+.ipwd {
+	background: transparent url(../images/icon_pwd.png) no-repeat;
+}
+.nrnj {
+	background: transparent url(../images/icon_nrnj.png) no-repeat;
+}
+.nrb {
+	background: transparent url(../images/icon_nrb.png) no-repeat;
+}

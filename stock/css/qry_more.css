@@ -1,0 +1,70 @@
+@charset "utf-8";
+.tab .line {
+	left: calc(16.66% * 5 + (16.66% - 28px)/2);
+}
+.content {
+	font-size: 1.4rem;
+	color: #666;
+}
+.title {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+	color: #97afc2;
+}
+.group {
+	background-color: #fff;
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+}
+.group li {
+	height: 45px;
+	line-height: 45px;
+}
+.group li.split {
+	margin-left: 5%;
+	width: 95%;
+	height: 0;
+	border-top: 1px solid #e3e3e3;
+}
+.group li.arrow {
+	background: transparent url(../images/icon_arrow.png) no-repeat;
+	background-size: 14px auto;
+	background-position: 95% 50%;
+}
+.group li:active {
+	background-color: #ebebeb;
+}
+.group a {
+	display: block;
+}
+.group a.icon {
+	padding-left: 15%;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	background-position: 5% center;
+}
+.group .icon1 {
+	background: transparent url(../images/icon_day_order.png) no-repeat;
+}
+.group .icon2 {
+	background: transparent url(../images/icon_his_order.png) no-repeat;
+}
+.group .icon3 {
+	background: transparent url(../images/icon_day_deal.png) no-repeat;
+}
+.group .icon4 {
+	background: transparent url(../images/icon_his_deal.png) no-repeat;
+}
+.group .icon5 {
+	background: transparent url(../images/icon_day_flow.png) no-repeat;
+}
+.group .icon6 {
+	background: transparent url(../images/icon_his_flow.png) no-repeat;
+}
+.group .icon7 {
+	background: transparent url(../images/icon_delivery.png) no-repeat;
+}
+.group .icon8 {
+	background: transparent url(../images/icon_acct.png) no-repeat;
+}

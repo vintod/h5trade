@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>撤单</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../lib/css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/cancel_order.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="../lib/js/common.js"></script>
+</head>
+<body>
+	<div class="header bg1">
+		<a class="back bg1a">&nbsp;</a>
+		撤单
+	</div>
+	<div class="tab">
+		<span class="line"></span>
+		<ul>
+			<li data-url="entrust_buy">买入</li>
+			<li data-url="entrust_sell">卖出</li>
+			<li data-url="cancel_order" class="active">撤单</li>
+			<li data-url="qry_position">持仓</li>
+			<li data-url="qry_assets">资产</li>
+			<li data-url="qry_more">查询</li>
+		</ul>
+	</div>
+	
+	<div class="content">
+		<ul class="title">
+			<li>&nbsp;</li>
+			<li>证券名称</li>
+			<li>委托价格</li>
+			<li>委托数量</li>
+			<li>成交数量</li>
+		</ul>
+		<div class="list" id="list">
+			<p class="nodata">没有查询到数据</p>
+		</div><!-- list -->
+	</div><!-- content -->
+</body>
+</html>

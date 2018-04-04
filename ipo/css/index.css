@@ -1,0 +1,277 @@
+@charset "utf-8";
+.content {
+	font-size: 1.4rem;
+}
+.tab {
+	background-color: transparent;
+}
+.head {
+	padding: 5px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    color: rgba(255, 255, 255, 0.6);
+}
+.head .title {
+	padding: 0 0 0 0.5rem;
+	height: 30px;
+	line-height: 30px;
+}
+.head .title .time {
+	position: absolute;
+	right: 0;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 10px;
+	font-size: 1.2rem;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.head .market {
+	text-align: center;
+	font-size: 1.4rem;
+	overflow: auto;
+}
+.head .market li {
+	float: left;
+	width: 50%;
+}
+.head .market li:nth-child(1) {
+	background: transparent linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%,rgba(255, 255, 255, 0.3) 100%) no-repeat center right;
+	background-size: 1px 80%;
+}
+.head .market li>p:nth-child(1) {
+	height: 40px
+	line-height: 40px;
+}
+.head .market li>p:nth-child(2) {
+	height: 20px;
+	line-height: 20px;
+}
+.head .value {
+	font-size: 3.5rem;
+	font-weight: 100;
+	color: #fff;
+}
+.head .unit {
+	font-size: 1.4rem;
+}
+.head .course {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+}
+.head .course a:after {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 30px;
+	background: transparent url(../images/icon_arrow_double.png) no-repeat center center;
+	background-size: 100% auto;
+}
+.head .course a:active {
+	color: rgba(255, 255, 255, 0.6);
+}
+/* 列表 */
+.container {
+	position: relative;
+	overflow: auto;
+}
+.hide {
+	display: none;
+}
+.week {
+	font-size: 1.2rem;
+	color: #999;
+}
+.page {
+	overflow: hidden;
+}
+.page .panel {
+	background-color: #fff;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.page .panel .title {
+	display: block;
+	width: 96%;
+	padding-left: 2%;
+	height: 30px;
+	line-height: 30px;
+	color: #666;
+	font-weight: 600;
+	background: transparent linear-gradient(to bottom, #666 0%,#666 100%) no-repeat center left;
+	background-size: 3px 60%;
+}
+.page .panel .title+div {
+	border-top: 1px solid #f0f0f0;
+	display: none;
+}
+.page .panel .title.expand+div {
+	display: block;
+}
+.page .panel .title:after {
+	content: "";
+	width: 10px;
+	height: 30px;
+	float: right;
+	font-size: 1.0rem;
+	color: #fff;
+	background: transparent url(../images/icon_arrow_down.png) no-repeat center center;
+	background-size: 10px auto;
+}
+.page .panel .title.expand:after {
+	background: transparent url(../images/icon_arrow_up.png) no-repeat center center;
+	background-size: 10px auto;
+}
+.page .panel .list {
+	min-height: 60px;
+	border-bottom: 1px solid #fff;
+}
+.page .panel .list a.item {
+	display: block;
+	width: 95%;
+	margin-left: 4%;
+	padding: 5px 5px 5px 0;
+	border-top: 5px solid #f0f0f0;
+}
+.page .panel .list a.item:active {
+	background-color: #eee;
+}
+.page .panel .list a.item:nth-child(1) { 
+	border-top: 0;
+}
+.page .panel .list a.item p {
+	padding: 5px 0;
+}
+.page .panel .list a.item .stock {
+	border-bottom: 1px dashed #eee;
+	padding: 3px 0 3px 15px;
+	position: relative;
+}
+.page .panel .list a.item .stock.sh {
+	background: transparent url(../images/icon_market_sh.png) no-repeat left center;
+	background-size: 12px auto;
+}
+.page .panel .list a.item .stock.sz {
+	background: transparent url(../images/icon_market_sz.png) no-repeat left center;
+	background-size: 12px auto;
+}
+.page .panel .list a.item .stock.cyb {
+	background: transparent url(../images/icon_market_cyb.png) no-repeat left center;
+	background-size: 12px auto;
+}
+.page .panel .list a.item .stock .name {
+	color: #2287d6;
+	font-weight: 600;
+}
+.page .panel .list a.item .stock .code {
+	color: #999;
+	font-size: 1.2rem;
+	padding: 0 5px;
+}
+.page .panel .list a.item .value {
+	font-size: 2.0rem;
+	padding: 10px 0 0;
+	color: #e04e29;
+}
+.page .panel .list a.item .key {
+	color: #999;
+	font-size: 1.2rem;
+	padding: 0 0 5px;
+}
+.page .panel .list a.item .value span,
+.page .panel .list a.item .key span {
+	display: inline-block;
+	text-align: center;
+}
+.page .panel .list a.item .value span:first-child:nth-last-child(3),
+.page .panel .list a.item .value span:first-child:nth-last-child(3) ~ span {
+	width: 33.3333%;
+}
+.page .panel .list a.item .value span:first-child:nth-last-child(4),
+.page .panel .list a.item .value span:first-child:nth-last-child(4) ~ span {
+	width: 25%;
+}
+.page .panel .list a.item .key span:first-child:nth-last-child(3),
+.page .panel .list a.item .key span:first-child:nth-last-child(3) ~ span {
+	width: 33.3333%;
+}
+.page .panel .list a.item .key span:first-child:nth-last-child(4),
+.page .panel .list a.item .key span:first-child:nth-last-child(4) ~ span {
+	width: 25%;
+}
+.page .panel .list a.item .value span .unit {
+	color: #999;
+	font-size: 1.2rem;
+}
+.nodata2 {
+	text-align: center;
+	color: #c0cad5;
+	font-size: 1.2rem;
+	line-height: 50px;
+}
+.page .intro {
+	padding: 0 5px;
+	color: #999;
+	font-size: 1.4rem;
+}
+.fill {
+	height: 45px;
+}
+.btn1 {
+	position: fixed;
+	height: 45px;
+	line-height: 45px;
+	width: 80%;
+	text-align: center;
+	bottom: 0;
+	color: #fff;
+}
+.btn1.disabled {
+	background-color: #aaa !important;
+	color: #ccc;
+}
+.btn1.disabled:active {
+	background-color: #aaa !important;
+}
+.btn2 {
+	position: fixed;
+	height: 45px;
+	line-height: 45px;
+	width: 20%;
+	background-color: #fff;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+	color: #666;
+}
+.btn2:active {
+	background-color: #f0f0f0;
+}
+.pop {
+	display: none;
+	position:fixed;
+	z-index: 9999;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.1);
+}
+.cpop .tbar {
+	position: absolute;
+	top: auto;
+	bottom: 45px;
+	right: 10px;
+}
+.cpop .tbar .arrow {
+	margin-right: 10px;
+	float: right;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(224, 78, 41, 1);
+    border-top: 10px solid rgba(255, 255, 255, 1);
+    border-bottom: 0 solid rgba(0,0,0,0);
+}

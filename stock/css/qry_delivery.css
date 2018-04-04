@@ -1,0 +1,82 @@
+@charset "utf-8";
+.tab .line {
+	left: calc(16.66% * 5 + (16.66% - 28px)/2);
+}
+.content {
+	margin-top: 5px;
+	font-size: 1.4rem;
+}
+.cond {
+	background-color: #fff;
+	padding: 5px 5%;
+	overflow: auto;
+}
+.cond li {
+	float: left;
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.cond li:nth-child(1) {
+	width: 35%;
+}
+.cond li:nth-child(2){
+	width: 5%;
+}
+.cond li:nth-child(3){
+	width: 35%;
+}
+.cond li:nth-child(4){
+	width: 25%;
+}
+.cond .value {
+	width: 99%;
+	height: 28px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+.cond input {
+	position: absolute;
+	width: 90%;
+	height: 95%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.c-button.min {
+	width: 90%;
+	padding: 0;
+	margin-left: 10%;
+}
+.title {
+	color: #6d6d6d;
+	overflow: auto;
+	height: 35px;
+	line-height: 35px;
+}
+.title li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.list {
+	color: #666;
+	overflow: auto;
+}
+.list ul {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	overflow: auto;
+}
+.list li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding: 10px 0;
+}
+.list li p {
+	height: 20px;
+	line-height: 20px;
+	white-space:nowrap;
+}

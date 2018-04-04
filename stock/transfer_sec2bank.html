@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>证券转银行</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../lib/css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/transfer_sec2bank.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="../lib/js/common.js"></script>
+</head>
+<body>
+	<div class="header bg1">
+		<a class="back bg1a">&nbsp;</a>
+		证券转银行
+	</div>
+	<div class="tab">
+		<span class="line"></span>
+		<ul>
+			<li data-url="transfer_bank2sec">资金转入</li>
+			<li data-url="transfer_sec2bank" class="active">资金转出</li>
+			<li data-url="transfer_qrybalance">银行余额</li>
+			<li data-url="transfer_qryflow">转账流水</li>
+		</ul>
+	</div>
+	
+	<div class="content">
+		<a class="card" id="btnSelBank">
+			<p class="bank"><span>--</span></p>
+			<!-- <p class="no">尾号<span class="orange">--</span>储蓄卡</p> -->
+		</a>
+		
+		<div class="form">
+			<ul>
+				<li>转账币种</li>
+				<li class="field">
+					<span class="value">--</span>
+					<select id="selCurrency">
+						<!-- 
+						<option value="0">人民币</option>
+						<option value="2">美元</option>
+						<option value="1">港币</option>
+						-->
+					</select>
+					<span class="arrow">&nbsp;</span>
+				</li>
+			</ul>
+			<!-- ul>
+				<li>资金账号</li>
+				<li class="field" id="funcid">
+					--
+				</li>
+			</ul -->
+			<ul>
+				<li>最大可转</li>
+				<li class="field" id="desirableAmount">
+					0
+				</li>
+			</ul>
+			
+			<ul>
+				<li>转出金额</li>
+				<li class="field">
+					<input id="tranamt" type="number" placeholder="请输入转账金额" maxlength="8">
+				</li>
+			</ul>
+			
+		</div>
+		<p class="upper">零</p>
+		
+		<p class="c-button bg1 bg1a" id="btnSubmit">转出</p>
+		<div class="pop">
+			<div>
+				<p class="title">请输入资金密码</p>
+				<p class="pwd" id="showPwd">
+					    <span>&nbsp;</span><!-- 
+					 --><span>&nbsp;</span><!-- 
+					 --><span>&nbsp;</span><!-- 
+					 --><span>&nbsp;</span><!-- 
+					 --><span>&nbsp;</span><!-- 
+					 --><span>&nbsp;</span>
+					 <input id="inputPwd" type="tel" maxlength="6">
+				</p>
+				<p class="bconter">
+					<a class="button cancel" id="btnCancel">取消</a>
+					<a class="button okay" id="btnOkay">确定</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

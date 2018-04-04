@@ -1,0 +1,217 @@
+@charset "utf-8";
+.tab li.active {
+	background-size: 56px 2px;
+}
+.tab .line {
+	width: 55px;
+	left: calc(25% + (25% - 55px)/2);
+}
+.content {
+	font-size: 1.4rem;
+}
+.card {
+	display: block;
+	margin-top: 5px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 10px 35px 10px 150px;
+	/*
+	background: #fff url(../images/bank/bk_gsyh.gif) no-repeat left center;
+	background-size: auto 38px;
+	background-position: 10px 50%;
+	*/
+	position: relative;
+	background-color: #fff;
+	text-align: right;
+}
+.card:active {
+	background-color: #eee;
+}
+.card .bank {
+	font-size: 1.4rem;
+	height: 1.4rem;
+}
+.card .bank span {
+	display: inline-block;
+	width: 100px;
+}
+.card .no {
+	font-size: 1.2rem;
+	color: #828282;
+}
+.card .no span {
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+}
+.card:after {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 100%;
+	top: 0;
+	right: 15px;
+	background: transparent url(../images/icon_arrow.png) no-repeat left center;
+	background-size: 15px auto;
+}
+.form {
+	margin-top: 5px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+}
+
+.form ul {
+	margin-left: 15px;
+	padding-right: 15px;
+	height: 45px;
+	line-height: 45px;
+}
+.form ul:nth-child(1),.form ul:nth-child(2),.form ul:nth-child(3) {
+	border-bottom: 1px solid #eee;
+}
+.form ul li {
+	float: left;
+}
+.form ul li:nth-child(1) {
+	width: 40%;
+}
+.form ul li:nth-child(2) {
+	width: 60%;
+}
+.form .field {
+	position: relative;
+	text-align: right;
+}
+.form .field .value {
+	float: right;
+	padding-right: 25px;
+}
+.form .field .arrow {
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	right: 0;
+	background: transparent url(../images/icon_down_arrow.png) no-repeat center center;
+	background-size: 12px 12px;
+}
+.form .field select {
+	width: 100%;
+	height: 100%;
+	position: absolute;  
+    left: 0;  
+    top: 0;
+    opacity: 0; 
+}
+.form .field input {
+	width: 100%;
+	height: 45px;
+	font: normal 1.4rem "HiraginoSansGB", "Helvetica", "Arial","Microsoft YaHei", sans-serif;
+	text-align: right;
+}
+.form .field input:focus {
+	outline: none;
+}
+#desirableAmount {
+	font-weight: 600;
+}
+#tranamt{
+	font-weight: 600;
+}
+.upper {
+	padding: 0 15px;
+	text-align: right;
+	color: #999;
+}
+.pop {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+.pop>div {
+	background: #f0f0f0;
+	width: 90%;
+	height: 180px;
+	margin-left: 5%;
+	margin-top: 200px;
+	margin-top: calc((100vh - 200px)/2);
+	border-radius: 5px;
+}
+.pop .title {
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.8rem;
+	text-align: center;
+	border-bottom: 1px solid #d9d9d9;
+}
+.pop .pwd {
+	position: relative;
+	padding: 10px 0;
+	text-align: center;
+	overflow: hidden;
+}
+.pop .pwd span {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 30px;
+}
+.pop .pwd span:nth-child(1),.pop .pwd span:nth-child(3),.pop .pwd span:nth-child(5) {
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+}
+.pop .pwd span:nth-child(1) {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.pop .pwd span:nth-child(6) {
+	border-right: 1px solid #d9d9d9;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.pop .pwd input {
+	position: absolute;
+	width: 120%;
+	height: 40px;
+	top: 10px;
+	left: -5px;
+	opacity: 0; 
+	font-size: 1px;
+}
+.pop .bconter {
+	text-align: center;
+	padding: 10px 0;
+}
+.pop .bconter a {
+	display: inline-block;
+	width: 45%;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 5px;
+	font-size: 1.6rem;
+	margin: 0;
+}
+.pop .bconter a.cancel {
+	background-color: #fff;
+	color: #333;
+}
+.pop .bconter a.cancel:active {
+	background-color: #d9d9d9;
+}
+.boxCont {
+	display: block;
+	text-align: left;
+	line-height: 1.5;
+}
+.prompt {
+	position: absolute;
+	text-align: right;
+	color: #999;
+	right: 0;
+}

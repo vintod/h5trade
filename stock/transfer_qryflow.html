@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>转账流水</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../lib/css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="./css/transfer_qryflow.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="../lib/js/common.js"></script>
+</head>
+<body>
+	<div class="header bg1">
+		<a class="back bg1a">&nbsp;</a>
+		转账流水
+	</div>
+	<div class="tab">
+		<span class="line"></span>
+		<ul>
+			<li data-url="transfer_bank2sec">资金转入</li>
+			<li data-url="transfer_sec2bank">资金转出</li>
+			<li data-url="transfer_qrybalance">银行余额</li>
+			<li data-url="transfer_qryflow" class="active">转账流水</li>
+		</ul>
+	</div>
+	
+	<div class="content">
+		<ul class="title">
+			<li>&nbsp;</li>
+			<li>银行</li>
+			<li>币种</li>
+			<li>金额</li>
+			<li>余额</li>
+		</ul>
+		<div class="list" id="list"></div>
+	</div>
+</body>
+</html>
